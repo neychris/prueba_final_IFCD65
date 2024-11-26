@@ -1,0 +1,76 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form action="servidor-ejemplo.com">
+    <fieldset>
+      <legend>Contacto</legend>
+      <div class="form-control">
+        <label for="name">Nombre</label><br>
+        <input type="name" id="name"placeholder="introduce tu nombre" required />
+      </div><br>
+      
+      <div class="form-control">
+        <label for="name">Apellidos</label><br>
+        <input type="name" id="name" placeholder="Introduce tus apellidos" required />
+      </div><br>
+
+      <div class="form-control">
+        <label for="email">Email</label><br>
+        <input
+          type="email"
+          id="email"
+          placeholder="Introduce tu Email"
+          required
+        />
+      </div><br>
+
+      <div class="form-control">
+        <label for="name">Numero de contacto</label><br>
+        <input type="name" id="name" placeholder="Introduce numero de contacto" required />
+      </div><br>
+
+      <div class="form-control">
+        <label for="name">Motivo del contacto</label><br>
+        <select id="Motivo" name="Motivo">
+            <option value="notengointernet">no tengo internet</option>
+            <option value="cortesenlaconeccion">Cortes en la coneccion</option>
+            <option value="mevalento">Me va lento</option>
+            <option value="nomereconocecontraseña">No me reconoce la contraseña</option>
+          </select>
+
+      <div class="form-control"><br>
+        <label for="Descripcion del problema">Descripcion del problema</label><br>
+        <textarea
+         id="name"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Introduce tu mensaje"
+          required /> </textarea>
+    </div><br>
+      <input type="submit" value="Enviar" class="submit-btn" />
+    </fieldset>
+</form>
+  
+<body>
+    
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+     $('#api_crud_form').on('submit', function (event) {
+                event.preventDefault();
+                if ($('#nombre').val() == '') {
+                    alert("Ingresar Nombre");
+                } 
+                else{
+                  alert("se envio los datos");
+                }
+        });
+      });
+    
+    </script>
