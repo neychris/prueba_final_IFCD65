@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.contenedor {
+  text-align: center;
+}
+.div{
+    border: solid 4 px black;
+
+  }
+
+.box {
+  border: 5px solid #dff4ff;
+  height: 150vh;
+  width: 20vw;
+  font-size: 10vh;
+}
+form {
+    padding: 1rem;
+    background: #dff4ff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 8px black;
+  border-radius: 20px;
+}
+
+fieldset {
+    border-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+  display: flex;
+  align-self: self-end;
+  width: 100px;
+}
